@@ -1,3 +1,4 @@
+import { BookSection } from "./components/BookSection";
 import { Hero } from "./components/Hero";
 import { MiniNav } from "./components/MiniNav";
 import { SiteHeader } from "./components/SiteHeader";
@@ -9,7 +10,7 @@ function App() {
       <Hero />
       <MiniNav />
       <main>
-        {/* <BookSection /> */}
+        <BookSection />
         {/* <ConcertSection /> */}
         {/* <InterviewsSection /> */}
         {/* <ResourcesSection /> */}
