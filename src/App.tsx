@@ -1,4 +1,5 @@
 import { Hero } from "./components/Hero";
+import { MiniNav } from "./components/MiniNav";
 import { SiteHeader } from "./components/SiteHeader";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
       <Hero />
-      {/* <MiniNav /> */}
+      <MiniNav />
       <main>
         {/* <BookSection /> */}
         {/* <ConcertSection /> */}
