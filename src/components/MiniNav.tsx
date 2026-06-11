@@ -1,10 +1,4 @@
-const links = [
-  { href: "#book", label: "Book" },
-  { href: "#concert", label: "Concert" },
-  { href: "#interviews", label: "Interviews" },
-  { href: "#resources", label: "Resources" },
-  { href: "#support", label: "Support" },
-];
+import { navLinks } from "../data/campaign";
 
 export function MiniNav() {
   return (
@@ -14,7 +8,7 @@ export function MiniNav() {
     >
       <div className="container-page overflow-x-auto">
         <ul className="flex justify-start gap-2 whitespace-nowrap py-3 md:justify-center">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
