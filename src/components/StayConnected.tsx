@@ -1,36 +1,4 @@
-type ConnectedItem = {
-  label: string;
-  description: string;
-  icon: string;
-};
-
-const connectedItems: ConnectedItem[] = [
-  {
-    label: "Subscribe",
-    description: "Daily e-devotional",
-    icon: "M3 5h18M3 12h18M3 19h12",
-  },
-  {
-    label: "Download",
-    description: "Mobile app",
-    icon: "M12 3v12m0 0l-4-4m4 4l4-4M5 21h14",
-  },
-  {
-    label: "Find",
-    description: "Radio & TV airings",
-    icon: "M21 21l-4.35-4.35M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z",
-  },
-  {
-    label: "Follow",
-    description: "On social media",
-    icon: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 1 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z",
-  },
-  {
-    label: "Visit",
-    description: "BibleStrong.org & more",
-    icon: "M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0",
-  },
-];
+import { connectedItems } from "../data/campaign";
 
 export function StayConnected() {
   return (
