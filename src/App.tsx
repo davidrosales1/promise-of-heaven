@@ -5,6 +5,7 @@ import { InterviewsSection } from "./components/InterviewsSection";
 import { MiniNav } from "./components/MiniNav";
 import { ResourcesSection } from "./components/ResourcesSection";
 import { SiteHeader } from "./components/SiteHeader";
+import { StayConnected } from "./components/StayConnected";
 import { SupportSection } from "./components/SupportSection";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <InterviewsSection />
         <ResourcesSection />
         <SupportSection />
-        {/* <StayConnected /> */}
+        <StayConnected />
       </main>
       {/* <SiteFooter /> */}
     </div>
