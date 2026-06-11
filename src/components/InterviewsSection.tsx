@@ -1,55 +1,5 @@
 import { useState } from "react";
-
-type Interview = {
-  title: string;
-  thumb: string;
-  video: string;
-};
-
-const interviews: Interview[] = [
-  {
-    title: "Message & Ministry",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-Message-and-Ministry.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/2025/2025_POH/DrJ_DMJ_Cut%208/DrJ_DMJ_Cut%208_1080p.mp4?jobid=1755794973426-704xe7",
-  },
-  {
-    title: "James Brown Interview",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-James-Brown.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/2025/2025_POH/POH_TS_JamesBrownInterview%20V1%20FINAL/POH_TS_JamesBrownInterview%20V1%20FINAL_1080p.mp4?jobid=1755026078937-55l4gv",
-  },
-  {
-    title: "Sheila Walsh Interview",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-Sheila-Walsh.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/E_Product/POH_Prod_Mstr/POHINTDV/POHINTDV_1080p.mp4?jobid=1754934653122-afauy9",
-  },
-  {
-    title: "Lauren Green Interview",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-Lauren-Green.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/2025/2025_POH/POH_TS_LaurenGreenInterview%20Web.Copy.02/POH_TS_LaurenGreenInterview%20Web.Copy.02_1080p.mp4?jobID=1760739014085-uu1zx4",
-  },
-  {
-    title: "Rapid Fire Q & A",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-Rapid-Fire.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/2025/2025_POH/DrJ_Rapid_Fire/Dr%20J%20Rapid%20Fire%20v5_1/Dr%20J%20Rapid%20Fire%20v5_1_1080p.mp4?jobid=1757531551367-p1kvzj",
-  },
-  {
-    title: "PASSAGES for Young Adults",
-    thumb:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/thumbnail-Passages-Social.jpg",
-    video:
-      "https://d2vftoccbq8rr6.cloudfront.net/video/television/2025/2025_POH/Passages_Pod-24%20-%20Dr.%20J_FINAL/Passages_Pod-24%20-%20Dr.%20J_FINAL_1080p.mp4?jobID=1756785543591-w2hd20",
-  },
-];
+import { interviews, type Interview } from "../data/campaign";
 
 export function InterviewsSection() {
   const [activeInterview, setActiveInterview] = useState<Interview | null>(
