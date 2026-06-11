@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CtaLink } from "./CtaLink";
 
 const THUMB =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/POH-A-Glimpse-of-Heaven.jpg";
@@ -81,18 +82,12 @@ export function ConcertSection() {
           )}
         </div>
         <div className="mt-10 flex flex-col items-center gap-3 md:flex-row md:justify-center">
-          <a
-            href="#"
-            className="flex w-full items-center justify-center rounded-full bg-foreground px-7 py-3 text-sm font-medium text-background transition hover:bg-foreground/90 md:w-auto"
-          >
+          <CtaLink href="#" variant="dark">
             Watch Behind the Scenes
-          </a>
-          <a
-            href="#"
-            className="flex w-full items-center justify-center rounded-full border border-foreground/30 bg-background/60 px-7 py-3 text-sm text-foreground transition hover:bg-background/90 md:w-auto"
-          >
+          </CtaLink>
+          <CtaLink href="#" variant="outline">
             Remind Me
-          </a>
+          </CtaLink>
         </div>
       </div>
     </section>
