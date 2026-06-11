@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero";
 import { InterviewsSection } from "./components/InterviewsSection";
 import { MiniNav } from "./components/MiniNav";
 import { ResourcesSection } from "./components/ResourcesSection";
+import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { StayConnected } from "./components/StayConnected";
 import { SupportSection } from "./components/SupportSection";
@@ -22,7 +23,7 @@ function App() {
         <SupportSection />
         <StayConnected />
       </main>
-      {/* <SiteFooter /> */}
+      <SiteFooter />
     </div>
   );
 }
