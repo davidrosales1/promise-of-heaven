@@ -2,9 +2,15 @@ type CtaLinkProps = {
   href: string;
   children: React.ReactNode;
   variant?: "gold" | "dark" | "outline";
+  className?: string;
 };
 
-export function CtaLink({ href, children, variant = "gold" }: CtaLinkProps) {
+export function CtaLink({
+  href,
+  children,
+  variant = "gold",
+  className = "",
+}: CtaLinkProps) {
   const variants = {
     gold: "bg-gold-gradient text-gold-foreground shadow-soft hover:brightness-110",
     dark: "bg-foreground text-background hover:bg-foreground/90",
@@ -15,7 +21,7 @@ export function CtaLink({ href, children, variant = "gold" }: CtaLinkProps) {
   return (
     <a
       href={href}
-      className={`flex w-full items-center justify-center rounded-full px-7 py-3 text-sm font-semibold transition md:inline-flex md:w-auto ${variants[variant]}`}
+      className={`flex w-full items-center justify-center rounded-full px-7 py-3 text-sm font-semibold transition md:inline-flex md:w-auto ${variants[variant]} ${className}`}
     >
       {children}
     </a>

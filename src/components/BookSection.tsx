@@ -1,3 +1,5 @@
+import { CtaLink } from "./CtaLink";
+
 const BOOK_BG =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/the-promise-of-heaven-campaign/POH-image-bkg2-V1.jpg";
 
@@ -48,12 +50,7 @@ export function BookSection() {
             earth.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 md:flex-row md:flex-wrap">
-            <a
-              href="#"
-              className="flex w-full items-center justify-center rounded-full bg-gold-gradient px-7 py-3 text-sm font-semibold text-gold-foreground shadow-soft transition hover:brightness-110 md:inline-flex md:w-auto"
-            >
-              Request Now
-            </a>
+            <CtaLink href="#">Request Now</CtaLink>
           </div>
         </div>
       </div>

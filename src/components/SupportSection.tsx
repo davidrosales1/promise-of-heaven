@@ -1,3 +1,5 @@
+import { CtaLink } from "./CtaLink";
+
 const SUPPORT_BG =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/the-promise-of-heaven-campaign/POH-image-bkg4-V1.jpg";
 
@@ -60,12 +62,9 @@ export function SupportSection() {
             support this outreach.
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 md:flex-row md:flex-wrap">
-            <a
-              href="#"
-              className="flex w-full items-center justify-center rounded-full bg-gold-gradient px-8 py-3.5 text-sm font-semibold text-gold-foreground shadow-soft transition hover:brightness-110 md:inline-flex md:w-auto"
-            >
+            <CtaLink href="#" className="px-8 py-3.5">
               Give Now
-            </a>
+            </CtaLink>
           </div>
         </div>
         <div className="hidden md:col-span-5 md:block">

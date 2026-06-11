@@ -1,4 +1,5 @@
 import { resources } from "../data/campaign";
+import { CtaLink } from "./CtaLink";
 
 const RESOURCES_BG =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/the-promise-of-heaven-campaign/POH-image-bkg3-V1.jpg";
@@ -41,12 +42,9 @@ export function ResourcesSection() {
               <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/80">
                 {resource.description}
               </p>
-              <a
-                href="#"
-                className="mt-6 inline-flex items-center justify-center rounded-full bg-gold-gradient px-6 py-2.5 text-sm font-semibold text-gold-foreground shadow-soft transition hover:brightness-110"
-              >
+              <CtaLink href="#" className="mt-6 px-6 py-2.5">
                 {resource.cta}
-              </a>
+              </CtaLink>
             </article>
           ))}
         </div>
