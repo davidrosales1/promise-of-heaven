@@ -5,6 +5,7 @@ import { InterviewsSection } from "./components/InterviewsSection";
 import { MiniNav } from "./components/MiniNav";
 import { ResourcesSection } from "./components/ResourcesSection";
 import { SiteHeader } from "./components/SiteHeader";
+import { SupportSection } from "./components/SupportSection";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <ConcertSection />
         <InterviewsSection />
         <ResourcesSection />
-        {/* <SupportSection /> */}
+        <SupportSection />
         {/* <StayConnected /> */}
       </main>
       {/* <SiteFooter /> */}
