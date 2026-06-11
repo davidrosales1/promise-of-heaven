@@ -1,3 +1,5 @@
+import { CtaLink } from "./CtaLink";
+
 const HERO_BG =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/the-promise-of-heaven-campaign/POH-image-bkg-V1.jpg";
 
@@ -40,18 +42,10 @@ export function Hero() {
           earth.
         </p>
         <div className="mt-10 flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center">
-          <a
-            href="#book"
-            className="flex w-full items-center justify-center rounded-full bg-gold-gradient px-7 py-3 text-sm font-semibold text-gold-foreground shadow-soft transition hover:brightness-110 md:inline-flex md:w-auto"
-          >
-            Request the Book
-          </a>
-          <a
-            href="#concert"
-            className="flex w-full items-center justify-center rounded-full border border-foreground/30 bg-background/50 px-7 py-3 text-sm font-medium text-foreground background-blur-sm transition hover:bg-background/80 md:inline-flex md:w-auto"
-          >
+          <CtaLink href="#book">Request the Book</CtaLink>
+          <CtaLink href="#concert" variant="outline">
             Watch the Special
-          </a>
+          </CtaLink>
         </div>
       </div>
     </section>
