@@ -1,38 +1,7 @@
+import { resources } from "../data/campaign";
+
 const RESOURCES_BG =
   "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/the-promise-of-heaven-campaign/POH-image-bkg3-V1.jpg";
-
-type Resource = {
-  image: string;
-  title: string;
-  description: string;
-  cta: string;
-};
-
-const resources: Resource[] = [
-  {
-    image:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/POH-Outreach-Kit.png",
-    title: "The Promise of Heaven Outreach Kit",
-    description:
-      "This downloadable collection contains everything that a small group or church community needs to get excited about heaven, including guided videos, a quick-start leader’s guide, a participant’s guide, and commercial-free streaming of Dr. Jeremiah’s messages.",
-    cta: "Learn More",
-  },
-  {
-    image:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/POH-10Things-Bkmk.png",
-    title: "10 Things You May Not Know About Heaven",
-    description: "Discover more about heaven with this free resource.",
-    cta: "Request Now",
-  },
-  {
-    image:
-      "https://d2urhn0mmik6is.cloudfront.net/site/_images/monthly/0825/gc/POH-YGTP.png",
-    title: "Your Greatest Turning Point",
-    description:
-      "Take the next step in your journey of answering, 'How do I get to heaven?' by diving into Your Greatest Turning Point",
-    cta: "Request Now",
-  },
-];
 
 export function ResourcesSection() {
   return (
